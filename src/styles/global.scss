@@ -1,0 +1,18 @@
+@import './resetCss';
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Roboto/Roboto-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Roboto/Roboto-Bold.ttf');
+    font-weight: 700;
+}

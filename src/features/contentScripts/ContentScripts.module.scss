@@ -1,0 +1,11 @@
+@use '/src/styles/variables' as *;
+@use '/src/styles/mixinResponsive' as *;
+
+.container {
+    background: $primary-color;
+    font-family: 'Roboto';
+
+    @include responsive(desktop) {
+        background: red;
+    }
+}
