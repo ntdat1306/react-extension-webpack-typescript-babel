@@ -356,7 +356,7 @@ Add 4 icons: 16.png 32.png 64.png 128.png
     },
     "web_accessible_resources": [
         {
-            "resources": ["./assets/*", "./content-scripts/content-scripts.css"],
+            "resources": ["./assets/*"],
             "matches": ["<all_urls>"]
         }
     ]
