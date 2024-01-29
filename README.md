@@ -80,7 +80,7 @@ yarn add html-webpack-plugin copy-webpack-plugin clean-webpack-plugin -D
 
 ## 🌵 Config
 
-### 🌿 Start config
+### 🌿 Start
 
 `package.json`  
 Add this scripts to file
@@ -136,7 +136,7 @@ Add this scripts to file
 }
 ```
 
-### 🌿 Config Webpack
+### 🌿 Webpack
 
 `webpack.common.cjs`
 
@@ -274,7 +274,7 @@ module.exports = merge(common, {
 });
 ```
 
-### 🌿 Config CSS/SCSS Module
+### 🌿 CSS/SCSS Module
 
 If want use css/scss module, add this code to `src/declaration.d.ts`
 
