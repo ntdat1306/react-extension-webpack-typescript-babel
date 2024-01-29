@@ -1,6 +1,6 @@
-# 🏅 Create React extension with Webpack + Typescript + Babel
+# 🏅 Create Chrome extension with React + Webpack + Typescript + Babel
 
-## 🥇 Folder structure
+## 🌿 Folder structure
 
 ```
 📦 react-extension-webpack-typescript-babel
@@ -48,7 +48,7 @@
 └── 📜yarn.lock
 ```
 
-## 🥇 Install package
+## 🌿 Install package
 
 ```
 yarn init -y
@@ -78,7 +78,7 @@ yarn add style-loader css-loader sass-loader -D
 yarn add html-webpack-plugin copy-webpack-plugin clean-webpack-plugin -D
 ```
 
-## 🥇 Config
+## 🌿 Config
 
 ### 🥈 Start config
 
@@ -285,7 +285,7 @@ declare module '*.scss' {
 }
 ```
 
-## 🥇 Create main file and folder
+## 🌿 Create main file and folder
 
 ### 🥈 Assets
 
@@ -500,7 +500,7 @@ $primary-color: green;
 }
 ```
 
-## 🥇 Build and run
+## 🌿 Build and run
 
 Build: `yarn run build`  
 After build success, `dist` folder will appear  
