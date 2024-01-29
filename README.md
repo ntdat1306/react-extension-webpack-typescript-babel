@@ -230,7 +230,7 @@ declare module '*.scss' {
 
 ### Assets
 
-Add global fonts in `src/assets/fonts` and images `src/assets/images`
+Add global fonts in `src/assets/fonts` and images in `src/assets/images`
 
 ### Features
 
