@@ -264,6 +264,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
 ```
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import '../../styles/global.scss';
 import ContentScripts from './ContentScripts';
 
 const init = () => {
@@ -283,7 +284,6 @@ init();
 
 ```
 import React from 'react';
-import '../../styles/global.scss';
 import styles from './ContentScripts.module.scss';
 
 const ContentScripts = () => {
@@ -450,5 +450,5 @@ $primary-color: green;
 ## Build and run
 
 Build: `yarn run build`  
-After build success, `dist` folder will appear
+After build success, `dist` folder will appear  
 Upload this `dist` folder to `chrome://extensions/` for using
