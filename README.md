@@ -1,6 +1,6 @@
-# Create React extension with Webpack + Typescript + Babel
+# 🏅 Create React extension with Webpack + Typescript + Babel
 
-## Folder structure
+## 🥇 Folder structure
 
 ```
 📦 react-extension-webpack-typescript-babel
@@ -48,7 +48,7 @@
 └── 📜yarn.lock
 ```
 
-## Install package
+## 🥇 Install package
 
 ```
 yarn init -y
@@ -78,9 +78,9 @@ yarn add style-loader css-loader sass-loader -D
 yarn add html-webpack-plugin copy-webpack-plugin clean-webpack-plugin -D
 ```
 
-## Config
+## 🥇 Config
 
-### Start config
+### 🥈 Start config
 
 `package.json`  
 Add this scripts to file
@@ -136,7 +136,7 @@ Add this scripts to file
 }
 ```
 
-### Config Webpack
+### 🥈 Config Webpack
 
 `webpack.common.cjs`
 
@@ -274,7 +274,7 @@ module.exports = merge(common, {
 });
 ```
 
-### Config CSS/SCSS Module
+### 🥈 Config CSS/SCSS Module
 
 If want use css/scss module, add this code to `src/declaration.d.ts`
 
@@ -285,15 +285,15 @@ declare module '*.scss' {
 }
 ```
 
-## Create main file and folder
+## 🥇 Create main file and folder
 
-### Assets
+### 🥈 Assets
 
 Add global fonts in `src/assets/fonts` and images in `src/assets/images`
 
-### Features
+### 🥈 Features
 
-#### Background
+#### 🥉 Background
 
 `src/features/background/background.ts`
 
@@ -309,7 +309,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
 
 ```
 
-#### Content Scripts
+#### 🥉 Content Scripts
 
 `src/features/content-scripts/index.tsx`  
 \- This file don't need `import '@styles/global.scss';` because this have `content-scripts.css` particular file, which will be injected by content-scripts  
@@ -362,9 +362,9 @@ export default ContentScripts;
 }
 ```
 
-#### Do the same with newTab, options and popup folder
+#### 🥉 Do the same with newTab, options and popup folder
 
-### Static
+### 🥈 Static
 
 `src/static`
 
@@ -416,7 +416,7 @@ Add 4 icons: 16.png 32.png 64.png 128.png
 }
 ```
 
-### Styles
+### 🥈 Styles
 
 `src/styles/_mixinResponsive.scss`
 
@@ -500,7 +500,7 @@ $primary-color: green;
 }
 ```
 
-## Build and run
+## 🥇 Build and run
 
 Build: `yarn run build`  
 After build success, `dist` folder will appear  
