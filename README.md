@@ -13,11 +13,11 @@
 │   │       └── ...
 │   ├── 📂features
 │   │   ├── 📂background
-│   │   │   └── 📜background.ts
+│   │   │   └── 📃background.ts
 │   │   ├── 📂contentScripts
-│   │   │   ├── 📜ContentScripts.module.scss
-│   │   │   ├── 📜ContentScripts.tsx
-│   │   │   └── 📜index.tsx
+│   │   │   ├── 📃ContentScripts.module.scss
+│   │   │   ├── 📃ContentScripts.tsx
+│   │   │   └── 📃index.tsx
 │   │   ├── 📂newTab
 │   │   │   └── ... (same above)
 │   │   ├── 📂options
@@ -29,23 +29,23 @@
 │   │   ├── 📷32.png
 │   │   ├── 📷64.png
 │   │   ├── 📷128.png
-│   │   └── 📜manifest.json
+│   │   └── 📃manifest.json
 │   ├── 📂styles
-│   │   ├── 📜_mixinResponsive.scss
-│   │   ├── 📜_resetCss.scss
-│   │   ├── 📜_variables.scss
-│   │   ├── 📜content-scripts.css
-│   │   └── 📜global.scss
-│   └── 📜declaration.d.ts
-├── 📜.babelrc
-├── 📜.gitignore
-├── 📜README.md
-├── 📜package.json
-├── 📜tsconfig.json
-├── 📜webpack.common.cjs
-├── 📜webpack.dev.cjs
-├── 📜webpack.prod.cjs
-└── 📜yarn.lock
+│   │   ├── 📃_mixinResponsive.scss
+│   │   ├── 📃_resetCss.scss
+│   │   ├── 📃_variables.scss
+│   │   ├── 📃content-scripts.css
+│   │   └── 📃global.scss
+│   └── 📃declaration.d.ts
+├── 📃.babelrc
+├── 📃.gitignore
+├── 📃README.md
+├── 📃package.json
+├── 📃tsconfig.json
+├── 📃webpack.common.cjs
+├── 📃webpack.dev.cjs
+├── 📃webpack.prod.cjs
+└── 📃yarn.lock
 ```
 
 ## 🌵 Install package
