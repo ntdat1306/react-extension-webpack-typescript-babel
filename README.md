@@ -111,6 +111,12 @@ Add this scripts to file
         "module": "es6",
         "skipLibCheck": true,
 
+        /* Alias */
+        "baseUrl": ".",
+        "paths": {
+            "@styles/*": ["./src/styles/*"]
+        },
+
         /* Bundler mode */
         "moduleResolution": "bundler",
         "allowImportingTsExtensions": true,
@@ -210,6 +216,9 @@ module.exports = {
         ...getHtmlWebpackPlugins([pathPopup, pathOptions, pathNewTab]),
     ],
     resolve: {
+        alias: {
+            '@styles': path.resolve(__dirname, 'src/styles'),
+        },
         extensions: ['.js', '.ts', '.jsx', '.tsx'],
     },
     output: {
@@ -302,12 +311,13 @@ chrome.runtime.onInstalled.addListener(function (details) {
 
 #### Content Scripts
 
-`src/features/content-scripts/index.tsx`
+`src/features/content-scripts/index.tsx`  
+\- This file don't need `import '@styles/global.scss';` because this have `content-scripts.css` particular file, which will be injected by content-scripts  
+\- But `index.tsx` file in `newTab`, `options` and `popup` folder will need `import '@styles/global.scss';`
 
 ```
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import '../../styles/global.scss';
 import ContentScripts from './ContentScripts';
 
 const init = () => {

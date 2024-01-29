@@ -73,6 +73,9 @@ module.exports = {
         ...getHtmlWebpackPlugins([pathPopup, pathOptions, pathNewTab]),
     ],
     resolve: {
+        alias: {
+            '@styles': path.resolve(__dirname, 'src/styles'),
+        },
         extensions: ['.js', '.ts', '.jsx', '.tsx'],
     },
     output: {
