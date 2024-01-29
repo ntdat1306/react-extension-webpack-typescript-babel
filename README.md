@@ -4,48 +4,48 @@
 
 ```
 📦 react-extension-webpack-typescript-babel
-├── 📂src
-│   ├── 📂assets
-│   │   ├── 📂fonts
-│   │   │   └── 📂Roboto
+├── 📂 src
+│   ├── 📂 assets
+│   │   ├── 📂 fonts
+│   │   │   └── 📂 Roboto
 │   │   │       └── ...
-│   │   └── 📂images
+│   │   └── 📂 images
 │   │       └── ...
-│   ├── 📂features
-│   │   ├── 📂background
-│   │   │   └── 📃background.ts
-│   │   ├── 📂contentScripts
-│   │   │   ├── 📃ContentScripts.module.scss
-│   │   │   ├── 📃ContentScripts.tsx
-│   │   │   └── 📃index.tsx
-│   │   ├── 📂newTab
+│   ├── 📂 features
+│   │   ├── 📂 background
+│   │   │   └── 📃 background.ts
+│   │   ├── 📂 contentScripts
+│   │   │   ├── 📃 ContentScripts.module.scss
+│   │   │   ├── 📃 ContentScripts.tsx
+│   │   │   └── 📃 index.tsx
+│   │   ├── 📂 newTab
 │   │   │   └── ... (same above)
-│   │   ├── 📂options
+│   │   ├── 📂 options
 │   │   │   └── ... (same above)
-│   │   └── 📂popup
+│   │   └── 📂 popup
 │   │       └── ... (same above)
-│   ├── 📂static
+│   ├── 📂 static
 │   │   ├── 📷16.png
 │   │   ├── 📷32.png
 │   │   ├── 📷64.png
 │   │   ├── 📷128.png
-│   │   └── 📃manifest.json
-│   ├── 📂styles
-│   │   ├── 📃_mixinResponsive.scss
-│   │   ├── 📃_resetCss.scss
-│   │   ├── 📃_variables.scss
-│   │   ├── 📃content-scripts.css
-│   │   └── 📃global.scss
-│   └── 📃declaration.d.ts
-├── 📃.babelrc
-├── 📃.gitignore
-├── 📃README.md
-├── 📃package.json
-├── 📃tsconfig.json
-├── 📃webpack.common.cjs
-├── 📃webpack.dev.cjs
-├── 📃webpack.prod.cjs
-└── 📃yarn.lock
+│   │   └── 📃 manifest.json
+│   ├── 📂 styles
+│   │   ├── 📃 _mixinResponsive.scss
+│   │   ├── 📃 _resetCss.scss
+│   │   ├── 📃 _variables.scss
+│   │   ├── 📃 content-scripts.css
+│   │   └── 📃 global.scss
+│   └── 📃 declaration.d.ts
+├── 📃 .babelrc
+├── 📃 .gitignore
+├── 📃 README.md
+├── 📃 package.json
+├── 📃 tsconfig.json
+├── 📃 webpack.common.cjs
+├── 📃 webpack.dev.cjs
+├── 📃 webpack.prod.cjs
+└── 📃 yarn.lock
 ```
 
 ## 🌵 Install package
