@@ -108,16 +108,9 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(ts|tsx)$/,
+                test: /\.(?:js|ts|jsx|tsx)$/,
+                use: ['babel-loader'],
                 exclude: /node_modules/,
-                use: [
-                    {
-                        loader: 'babel-loader',
-                        options: {
-                            presets: ['@babel/preset-env', '@babel/preset-react', '@babel/preset-typescript'],
-                        },
-                    },
-                ],
             },
             {
                 test: /\.s[ac]ss$/i,
