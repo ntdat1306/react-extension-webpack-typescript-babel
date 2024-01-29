@@ -25,10 +25,10 @@
 │   │   └── 📂 popup
 │   │       └── ... (same above)
 │   ├── 📂 static
-│   │   ├── 📷16.png
-│   │   ├── 📷32.png
-│   │   ├── 📷64.png
-│   │   ├── 📷128.png
+│   │   ├── 📷 16.png
+│   │   ├── 📷 32.png
+│   │   ├── 📷 64.png
+│   │   ├── 📷 128.png
 │   │   └── 📃 manifest.json
 │   ├── 📂 styles
 │   │   ├── 📃 _mixinResponsive.scss
@@ -82,7 +82,7 @@ yarn add html-webpack-plugin copy-webpack-plugin clean-webpack-plugin -D
 
 ### 🌿 Start
 
-`package.json`  
+📃 `package.json`  
 Add this scripts to file
 
 ```
