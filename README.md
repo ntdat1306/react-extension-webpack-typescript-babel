@@ -39,6 +39,7 @@
 │   └── 📜declaration.d.ts
 ├── 📜.babelrc
 ├── 📜.gitignore
+├── 📜README.md
 ├── 📜package.json
 ├── 📜tsconfig.json
 ├── 📜webpack.common.cjs
