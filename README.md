@@ -1,3 +1,52 @@
+# Create React extension with Webpack + Typescript + Babel
+
+## Folder structure
+
+```
+📦 react-extension-webpack-typescript-babel
+├── 📂src
+│   ├── 📂assets
+│   │   ├── 📂fonts
+│   │   │   └── 📂Roboto
+│   │   │       └── ...
+│   │   └── 📂images
+│   │       └── ...
+│   ├── 📂features
+│   │   ├── 📂background
+│   │   │   └── 📜background.ts
+│   │   ├── 📂contentScripts
+│   │   │   ├── 📜ContentScripts.module.scss
+│   │   │   ├── 📜ContentScripts.tsx
+│   │   │   └── 📜index.tsx
+│   │   ├── 📂newTab
+│   │   │   └── ... (same above)
+│   │   ├── 📂options
+│   │   │   └── ... (same above)
+│   │   └── 📂popup
+│   │       └── ... (same above)
+│   ├── 📂static
+│   │   ├── 📷16.png
+│   │   ├── 📷32.png
+│   │   ├── 📷64.png
+│   │   ├── 📷128.png
+│   │   └── 📜manifest.json
+│   ├── 📂styles
+│   │   ├── 📜_mixinResponsive.scss
+│   │   ├── 📜_resetCss.scss
+│   │   ├── 📜_variables.scss
+│   │   ├── 📜content-scripts.css
+│   │   └── 📜global.scss
+│   └── 📜declaration.d.ts
+├── 📜.babelrc
+├── 📜.gitignore
+├── 📜package.json
+├── 📜tsconfig.json
+├── 📜webpack.common.cjs
+├── 📜webpack.dev.cjs
+├── 📜webpack.prod.cjs
+└── 📜yarn.lock
+```
+
 ## Install package
 
 ```
