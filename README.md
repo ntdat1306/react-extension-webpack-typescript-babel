@@ -83,7 +83,7 @@ yarn add html-webpack-plugin copy-webpack-plugin clean-webpack-plugin -D
 ### 🌿 Start
 
 `package.json`  
-Add this scripts to file
+\- Add this scripts to file
 
 ```
 "scripts": {
@@ -276,7 +276,7 @@ module.exports = merge(common, {
 
 ### 🌿 CSS/SCSS Module
 
-If want use css/scss module, add this code to `src/declaration.d.ts`
+\- If want use css/scss module, add this code to `src/declaration.d.ts`
 
 ```
 declare module '*.scss' {
@@ -367,7 +367,7 @@ export default ContentScripts;
 
 `src/static`
 
-Add 4 icons: 16.png 32.png 64.png 128.png
+\- Add 4 icons: 16.png / 32.png / 64.png / 128.png
 
 `src/static/manifest.json`
 
@@ -501,6 +501,6 @@ $primary-color: green;
 
 ## 🌵 Build and run
 
-Build: `yarn run build`  
-After build success, `dist` folder will appear  
-Upload this `dist` folder to `chrome://extensions/` for using
+\- Build: `yarn run build`  
+\- After build success, `dist` folder will appear  
+\- Upload this `dist` folder to `chrome://extensions/` for using
