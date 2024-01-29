@@ -293,7 +293,7 @@ Add global fonts in `src/assets/fonts` and images in `src/assets/images`
 
 ### 🌾 Features
 
-#### 🥉 Background
+#### 🌱 Background
 
 `src/features/background/background.ts`
 
@@ -309,7 +309,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
 
 ```
 
-#### 🥉 Content Scripts
+#### 🌱 Content Scripts
 
 `src/features/content-scripts/index.tsx`  
 \- This file don't need `import '@styles/global.scss';` because this have `content-scripts.css` particular file, which will be injected by content-scripts  
@@ -362,7 +362,7 @@ export default ContentScripts;
 }
 ```
 
-#### 🥉 Do the same with newTab, options and popup folder
+#### 🌱 Do the same with newTab, options and popup folder
 
 ### 🌾 Static
 
