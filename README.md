@@ -82,7 +82,7 @@ yarn add html-webpack-plugin copy-webpack-plugin clean-webpack-plugin -D
 
 ### 🌿 Start
 
-📃 `package.json`  
+`package.json`  
 Add this scripts to file
 
 ```
