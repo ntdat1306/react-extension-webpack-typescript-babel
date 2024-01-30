@@ -85,7 +85,7 @@ yarn add html-webpack-plugin copy-webpack-plugin clean-webpack-plugin -D
 `package.json`  
 \- Add this scripts
 
-```json
+```
 "scripts": {
     "build": "webpack --watch --progress --config webpack.prod.cjs",
     "watch": "webpack --watch --progress --config webpack.dev.cjs"
@@ -102,7 +102,7 @@ yarn add html-webpack-plugin copy-webpack-plugin clean-webpack-plugin -D
 
 `tsconfig.json`
 
-```json
+```
 {
     "compilerOptions": {
         "target": "ES2020",
@@ -140,7 +140,7 @@ yarn add html-webpack-plugin copy-webpack-plugin clean-webpack-plugin -D
 
 `webpack.common.cjs`
 
-```cjs
+```
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
@@ -250,7 +250,7 @@ function getHtmlWebpackPlugins(chunks) {
 
 `webpack.dev.cjs`
 
-```cjs
+```
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.cjs');
 
@@ -262,7 +262,7 @@ module.exports = merge(common, {
 
 `webpack.prod.cjs`
 
-```cjs
+```
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.cjs');
 
@@ -278,7 +278,7 @@ module.exports = merge(common, {
 
 \- If want use css/scss module, add this code to `src/declaration.d.ts`
 
-```ts
+```
 declare module '*.scss' {
     const content: Record<string, string>;
     export default content;
@@ -297,7 +297,7 @@ Add global fonts in `src/assets/fonts` and images in `src/assets/images`
 
 `src/features/background/background.ts`
 
-```ts
+```
 chrome.runtime.onInstalled.addListener(function (details) {
     if (details.reason === 'install') {
         console.log('Install success');
@@ -314,7 +314,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
 \- This file don't need `import '@styles/global.scss';` because this have `content-scripts.css` particular file, which will be injected by content-scripts  
 \- But `index.tsx` file in `newTab`, `options` and `popup` folder will need `import '@styles/global.scss';`
 
-```tsx
+```
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import ContentScripts from './ContentScripts';
@@ -334,7 +334,7 @@ init();
 
 `src/features/content-scripts/ContentScripts.tsx`
 
-```tsx
+```
 import React from 'react';
 import styles from './ContentScripts.module.scss';
 
@@ -347,7 +347,7 @@ export default ContentScripts;
 
 `src/features/content-scripts/ContentScripts.module.scss`
 
-```scss
+```
 @use '/src/styles/variables' as *;
 @use '/src/styles/mixinResponsive' as *;
 
@@ -387,7 +387,7 @@ export default ContentScripts;
 
 `src/static/manifest.json`
 
-```json
+```
 {
     "manifest_version": 3,
     "name": "React Extension",
@@ -435,7 +435,7 @@ export default ContentScripts;
 
 `src/styles/_mixinResponsive.scss`
 
-```scss
+```
 $largeDesktop: 1400px;
 $desktop: 1200px;
 $tablet: 992px;
@@ -477,13 +477,13 @@ $portraitPhone: 576px;
 
 `src/styles/_variables.scss`
 
-```scss
+```
 $primary-color: grey;
 ```
 
 `src/styles/global.scss`
 
-```scss
+```
 @font-face {
     font-family: 'Roboto';
     src: url('chrome-extension://__MSG_@@extension_id__/fonts/Roboto/Roboto-Light.ttf');
@@ -504,7 +504,7 @@ $primary-color: grey;
 
 `src/styles/content-scripts.css`
 
-```css
+```
 @font-face {
     font-family: 'Roboto';
     src: url('chrome-extension://__MSG_@@extension_id__/fonts/Roboto/Roboto-Light.ttf');
