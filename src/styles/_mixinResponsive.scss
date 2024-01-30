@@ -1,35 +1,36 @@
+$largeDesktop: 1400px;
+$desktop: 1200px;
+$tablet: 992px;
+$landscapePhone: 768px;
+$portraitPhone: 576px;
+
 @mixin responsive($breakpoint) {
-    // Large desktop
     @if $breakpoint == largeDesktop {
-        @media screen and (max-width: 1400px) {
+        @media screen and (max-width: $largeDesktop) {
             @content;
         }
     }
 
-    // Small desktop
     @if $breakpoint == desktop {
-        @media screen and (max-width: 1200px) {
+        @media screen and (max-width: $desktop) {
             @content;
         }
     }
 
-    // Tablet
     @if $breakpoint == tablet {
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: $tablet) {
             @content;
         }
     }
 
-    // Mobile
     @if $breakpoint == landscapePhone {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: $landscapePhone) {
             @content;
         }
     }
 
-    // Phone
     @if $breakpoint == portraitPhone {
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: $portraitPhone) {
             @content;
         }
     }

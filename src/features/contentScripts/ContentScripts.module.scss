@@ -5,7 +5,23 @@
     background: $primary-color;
     font-family: 'Roboto';
 
-    @include responsive(desktop) {
+    @include responsive(largeDesktop) {
         background: red;
+    }
+
+    @include responsive(desktop) {
+        background: orange;
+    }
+
+    @include responsive(tablet) {
+        background: yellow;
+    }
+
+    @include responsive(landscapePhone) {
+        background: green;
+    }
+
+    @include responsive(portraitPhone) {
+        background: indigo;
     }
 }

@@ -355,8 +355,24 @@ export default ContentScripts;
     background: $primary-color;
     font-family: 'Roboto';
 
-    @include responsive(desktop) {
+    @include responsive(largeDesktop) {
         background: red;
+    }
+
+    @include responsive(desktop) {
+        background: orange;
+    }
+
+    @include responsive(tablet) {
+        background: yellow;
+    }
+
+    @include responsive(landscapePhone) {
+        background: green;
+    }
+
+    @include responsive(portraitPhone) {
+        background: indigo;
     }
 }
 ```
@@ -420,31 +436,39 @@ export default ContentScripts;
 `src/styles/_mixinResponsive.scss`
 
 ```
+$largeDesktop: 1400px;
+$desktop: 1200px;
+$tablet: 992px;
+$landscapePhone: 768px;
+$portraitPhone: 576px;
+
 @mixin responsive($breakpoint) {
-    // Small desktop
+    @if $breakpoint == largeDesktop {
+        @media screen and (max-width: $largeDesktop) {
+            @content;
+        }
+    }
+
     @if $breakpoint == desktop {
-        @media screen and (max-width: 1200px) {
+        @media screen and (max-width: $desktop) {
             @content;
         }
     }
 
-    // Tablet
     @if $breakpoint == tablet {
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: $tablet) {
             @content;
         }
     }
 
-    // Mobile
     @if $breakpoint == landscapePhone {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: $landscapePhone) {
             @content;
         }
     }
 
-    // Phone
     @if $breakpoint == portraitPhone {
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: $portraitPhone) {
             @content;
         }
     }
@@ -454,7 +478,7 @@ export default ContentScripts;
 `src/styles/_variables.scss`
 
 ```
-$primary-color: green;
+$primary-color: grey;
 ```
 
 `src/styles/global.scss`
