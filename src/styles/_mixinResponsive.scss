@@ -1,4 +1,11 @@
 @mixin responsive($breakpoint) {
+    // Large desktop
+    @if $breakpoint == largeDesktop {
+        @media screen and (max-width: 1400px) {
+            @content;
+        }
+    }
+
     // Small desktop
     @if $breakpoint == desktop {
         @media screen and (max-width: 1200px) {
