@@ -83,9 +83,9 @@ yarn add html-webpack-plugin copy-webpack-plugin clean-webpack-plugin -D
 ### 🌿 Start
 
 `package.json`  
-\- Add this scripts to file
+\- Add this scripts
 
-```
+```json
 "scripts": {
     "build": "webpack --watch --progress --config webpack.prod.cjs",
     "watch": "webpack --watch --progress --config webpack.dev.cjs"
@@ -102,7 +102,7 @@ yarn add html-webpack-plugin copy-webpack-plugin clean-webpack-plugin -D
 
 `tsconfig.json`
 
-```
+```json
 {
     "compilerOptions": {
         "target": "ES2020",
@@ -140,7 +140,7 @@ yarn add html-webpack-plugin copy-webpack-plugin clean-webpack-plugin -D
 
 `webpack.common.cjs`
 
-```
+```cjs
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
@@ -250,7 +250,7 @@ function getHtmlWebpackPlugins(chunks) {
 
 `webpack.dev.cjs`
 
-```
+```cjs
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.cjs');
 
