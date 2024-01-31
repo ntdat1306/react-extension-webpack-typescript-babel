@@ -144,6 +144,8 @@ yarn add html-webpack-plugin copy-webpack-plugin clean-webpack-plugin -D
 
 ### 🌿 Webpack
 
+#### 1. Common
+
 `webpack.common.cjs`
 
 ```
@@ -254,6 +256,8 @@ function getHtmlWebpackPlugins(chunks) {
 }
 ```
 
+#### 2. Dev
+
 `webpack.dev.cjs`
 
 ```
@@ -265,6 +269,8 @@ module.exports = merge(common, {
     devtool: 'cheap-module-source-map',
 });
 ```
+
+#### 3. Prod
 
 `webpack.prod.cjs`
 
@@ -295,7 +301,7 @@ declare module '*.scss' {
 
 ### 🌿 Assets
 
-Add global fonts in `src/assets/fonts` and images in `src/assets/images`
+\- Add global fonts in `src/assets/fonts` and images in `src/assets/images`
 
 ### 🌿 Features
 
@@ -389,7 +395,7 @@ export default ContentScripts;
 
 `src/static`
 
-\- Add 4 icons: 16.png / 32.png / 64.png / 128.png
+\- In this folder, add 4 icons: 16.png / 32.png / 64.png / 128.png
 
 `src/static/manifest.json`
 
@@ -439,6 +445,8 @@ export default ContentScripts;
 
 ### 🌿 Styles
 
+#### 1. Responsive
+
 `src/styles/_mixinResponsive.scss`
 
 ```
@@ -481,11 +489,15 @@ $portraitPhone: 576px;
 }
 ```
 
+#### 2. Variables
+
 `src/styles/_variables.scss`
 
 ```
 $primary-color: grey;
 ```
+
+#### 3. Global (use in newTab, options and popup features )
 
 `src/styles/global.scss`
 
@@ -507,6 +519,8 @@ $primary-color: grey;
     font-weight: 700;
 }
 ```
+
+#### 4. Content-scripts
 
 `src/styles/content-scripts.css`
 
