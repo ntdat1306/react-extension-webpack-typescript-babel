@@ -320,7 +320,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
 });
 ```
 
-#### 2. Content Scripts
+#### 2. Content-scripts
 
 `src/features/content-scripts/index.tsx`  
 \- This file don't need `import '@styles/global.scss';` because this have `content-scripts.css` particular file, which will be injected by content-scripts  
