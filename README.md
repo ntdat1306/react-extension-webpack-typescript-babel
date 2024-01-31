@@ -1,4 +1,4 @@
-# 🌱 Create Chrome extension with React + Webpack + Typescript + Babel
+# 🌱 Chrome Extension With React + Webpack + Typescript + Babel
 
 ## 🌵 Folder structure
 
