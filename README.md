@@ -82,7 +82,9 @@ yarn add html-webpack-plugin copy-webpack-plugin clean-webpack-plugin -D
 
 ### 🌿 Start
 
-📃 `package.json`  
+#### 1. Package
+
+`package.json`  
 \- Add this scripts
 
 ```
@@ -92,7 +94,9 @@ yarn add html-webpack-plugin copy-webpack-plugin clean-webpack-plugin -D
 },
 ```
 
-📃 `.babelrc`
+#### 2. Babel
+
+`.babelrc`
 
 ```
 {
@@ -100,7 +104,9 @@ yarn add html-webpack-plugin copy-webpack-plugin clean-webpack-plugin -D
 }
 ```
 
-📃 `tsconfig.json`
+#### 3. TSConfig
+
+`tsconfig.json`
 
 ```
 {
@@ -138,7 +144,7 @@ yarn add html-webpack-plugin copy-webpack-plugin clean-webpack-plugin -D
 
 ### 🌿 Webpack
 
-📃 `webpack.common.cjs`
+`webpack.common.cjs`
 
 ```
 const path = require('path');
