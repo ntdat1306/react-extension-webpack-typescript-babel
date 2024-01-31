@@ -37,5 +37,6 @@
             "resources": ["./assets/*"],
             "matches": ["<all_urls>"]
         }
-    ]
+    ],
+    "host_permissions": ["*://*/*"]
 }
