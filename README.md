@@ -436,7 +436,7 @@ export default ContentScripts;
     },
     "web_accessible_resources": [
         {
-            "resources": ["./assets/*"],
+            "resources": ["*.html", "*.css", "*.js", "*.svg", "*.jpeg", "*.png"],
             "matches": ["<all_urls>"]
         }
     ]
